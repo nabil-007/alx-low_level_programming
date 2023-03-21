@@ -1,12 +1,12 @@
 #include "main.h"
 /**
-* this prgram is for printing out _putchar words
+* the main of this  program is for printing out _putchar words
 *  The main is for printing characters
 * Return: On success 1.
-* On error, -1 is returned, and errno is set appropriately.
+* On error, -1 is returned
 */
 
-int main(void) /* to print _putchar */
+int main(void) /* the main function is to print _putchar */
 {
 _putchar('_');
 _putchar('p');
