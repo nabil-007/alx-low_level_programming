@@ -1,12 +1,12 @@
 #include "main.h"
 /**
-* _putchar program is for writing  the character c to stdout
+* this prgram is for printing out _putchar words
 *  The main is for printing characters
 * Return: On success 1.
 * On error, -1 is returned, and errno is set appropriately.
 */
 
-int main(void)
+int main(void) /* to print _putchar */
 {
 _putchar('_');
 _putchar('p');
