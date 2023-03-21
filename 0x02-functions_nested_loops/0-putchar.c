@@ -1,9 +1,9 @@
 #include "main.h"
 /**
-* the main of this  program is for printing out _putchar words
-*  The main is for printing characters
-* Return: On success 1.
-* On error, -1 is returned
+*the main of this  program is for printing out _putchar words
+*The main is for printing characters
+*Return: On success 1.
+*On error, -1 is returned
 */
 
 int main(void) /* the main function is to print _putchar */
