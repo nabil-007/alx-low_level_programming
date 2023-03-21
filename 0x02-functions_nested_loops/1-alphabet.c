@@ -1,15 +1,15 @@
 #include "main.h"
-int _putchar(char);
-/**this function's aim is to print a-z
+/**
+ *print alphabet  -print alphabet in lowercase
  *
- *
- *
+ *Return: Always 0 (Success)
  */
 void print_alphabet(void)
 {
 char c;
-for(c='a' ; c<='z' ;c++){
-	_putchar('c');
-	_putchar('\n');
-}
+	for(c='a' ; c<='z' ;c++)
+	{
+	_putchar ('c');
+	}
+	_putchar ('\n');
 }
