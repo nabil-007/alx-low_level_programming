@@ -9,11 +9,15 @@
 
 void positive_or_negative(int i)
 {
-	if (i >= 0)
+	if (i > 0)
 	{
 		printf("%d the number is positif",i);
 	}
-	else
+	else if (i=0)
 	{
-		printf("%d the number is negatif",i);
+		printf("%d it's zero ",i);
 	}
+	else (i <0)
+	{
+		printf("%d the number id negatif",i);
+	}	
