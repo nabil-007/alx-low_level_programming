@@ -1,31 +1,27 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - print 1 to 100,
- * multiples of 3 with Fizz,
- * multiples of 5 with Buzz
- * and multiple of both 3 and 5 with FizzBuzz
- * Return: 0 on success
+ * print_triangle - print traingle with #'s with given size
+ * @size: size of triangle to draw
  */
 
-int main(void)
+void print_triangle(int size)
 {
-	int i;
+	int height;
+	int width;
+	int draw;
 
-	for (i = 1; i <= 100; i++)
+	if (size <= 0)
+		_putchar('\n');
+
+	for (height = 1; height <= size; height++)
 	{
-		if (i % 3 == 0 && i % 5 == 0)
-			printf("FizzBuzz");
-		else if (i % 3 == 0)
-			printf("Fizz");
-		else if (i % 5 == 0)
-			printf("Buzz");
-		else
-			printf("%d", i);
+		for (width = 1; width <= (size - height); width++)
+			_putchar(' ');
 
-		if (i < 100)
-			printf(" ");
+		for (draw = 1; draw <= height; draw++)
+			_putchar('#');
+
+		_putchar('\n');
 	}
-	printf("\n");
-	return (0);
 }
