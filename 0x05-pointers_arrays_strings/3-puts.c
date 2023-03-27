@@ -2,17 +2,17 @@
 #include<stdio.h>
 /**
  * _puts - to print strings
- * @s : the string to be printed
+ * @str : the string to be printed
  */
 void _puts(char *str)
 {
-	int i=0;
+	int i = 0;
 
-	while(*(str + i) != '\0')
+	while (*(str + i) != '\0')
 	{
-		printf("%c",str[i]);
+		printf("%c", str[i]);
 		i++;
-	
+
 	}
 	printf("\n");
 }
