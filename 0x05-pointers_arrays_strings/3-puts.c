@@ -12,5 +12,6 @@ void _puts(char *str)
 	{
 		printf("%c",str[i]);
 		i++;
+		printf("\n");
 	}
 }
