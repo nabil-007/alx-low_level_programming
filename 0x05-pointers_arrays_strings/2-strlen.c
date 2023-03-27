@@ -3,12 +3,12 @@
  * _strlen - it returns the length of a string
  * @s : the string to be mesured
  *
- * return:the value of the length
+ * return: the length of string
  */
 int _strlen(char *s)
 {
 	int i = 0;
-	
+
 	while (*(s + i) != '\0')
 	{
 		i++;
