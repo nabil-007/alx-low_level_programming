@@ -21,7 +21,7 @@ char *_strncat(char *dest, char *src, int n)
 	len1 = i - 1;
 	for(m = 0 ; m <  n ; m++)
 	{
-		dest[len1++] =  src[m];
+		dest[len1++] =  src[m++];
         }
 		dest[len1] = '\0';
 return (dest);
