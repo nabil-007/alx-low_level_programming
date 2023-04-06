@@ -8,7 +8,7 @@
  */
 int _root(int n, int root)
 {
-	if (n < root *root)
+	if (n < root * root)
 	{
 		return (-1);
 	}
@@ -16,13 +16,13 @@ int _root(int n, int root)
 	{
 		return (root);
 	}
-	return (_root(n,root + 1));
+	return (_root(n, root + 1));
 }
-/** 
+/**
  * _sqrt_recursion - function to find square of a number
  * @n : the number
  *
- * Return squre ,-1 otherwise
+ * Return: squre ,-1 otherwise
  */
 int _sqrt_recursion(int n)
 {
@@ -30,5 +30,5 @@ int _sqrt_recursion(int n)
 	{
 		return (-1);
 	}
-	return (_root(n,0));
+	return (_root(n, 0));
 }
