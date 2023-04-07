@@ -6,7 +6,7 @@
  *
  * Return: 0 if the number is pair ,0 otherwise
  */
-int is_prime(int n,int div)
+int is_prime(int n, int div)
 {
 	if (n == div)
 	{
@@ -14,7 +14,7 @@ int is_prime(int n,int div)
 	}
 	if (n % div == 0)
 		return (0);
-	return (is_prime(n,div + 1));
+	return (is_prime(n, div + 1));
 }
 /**
  * is_prime_number - function to verify whether it's a prime number or not
@@ -29,7 +29,7 @@ int is_prime_number(int n)
 	{
 		return (1);
 	}
-	if (n < 2 || n % 2 == 0 )
+	if (n < 2 || n % 2 == 0)
 		return (0);
-	return (is_prime(n,div));
+	return (is_prime(n, div));
 }
