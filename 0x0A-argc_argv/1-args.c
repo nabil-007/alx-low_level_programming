@@ -9,8 +9,7 @@
  */
 int main(int argc, char __attribute__((unused))*argv[])
 {
-	if (argc > 1)
+	if (argc > 0)
 		printf("%i\n", argc - 1);
 	return (1);
-
 }
