@@ -5,11 +5,11 @@
  * @argv: the number of arguments
  *@argc: pointer to an array
  *
- * Return: 1 on succes
+ * Return: 0 on succes
  */
-int main(int argc, char __attribute__((unused))*argv[])
+int main(int argc, char *argv[]__attribute__((unused)))
 {
 	if (argc > 0)
 		printf("%i\n", argc - 1);
-	return (1);
+	return (0);
 }
