@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include<stdlib.h>
+#include"main.h"
 /**
  * main - function that prints the passed number of agruments
  * @argv: the number of arguments
