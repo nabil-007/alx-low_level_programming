@@ -19,12 +19,12 @@ char *_strdup(char *str)
 	}
 	n = j;
 	dup_str = malloc(n * sizeof(char));
+	if (str == NULL)
+	{
+		return (NULL);
+	}
 	for (i = 0; i <= n; i++)
 	{
-		if (str == NULL)
-		{
-			return (NULL);
-		}
 		dup_str[i] = str[i];
 	}
 	return (dup_str);
