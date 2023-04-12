@@ -4,7 +4,17 @@
  * @grid: ayyar of pointers
  * @height: the height of the pointer
  */
-void free_grid(int **grid, __attribute__((unused))int height)
+void free_grid(int **grid, int height)
 {
-	free(grid);
+	int i;
+
+	if (grid == NULL)
+	{
+		free(grid);
+	}
+	for (i = 0; i <= height; i++)
+	{
+		free(grid);
+	}
+
 }
