@@ -12,7 +12,7 @@ char *_strdup(char *str)
 	int n = sizeof(str);
 	char *dup_str = (char *)malloc(sizeof(str) * sizeof(char));
 
-	for (i = 0; i <= n; i++)
+	for (i = 0; i <= n - 1; i++)
 	{
 		if (str == NULL)
 		{
@@ -21,4 +21,5 @@ char *_strdup(char *str)
 		dup_str[i] = str[i];
 	}
 	return (dup_str);
+	free(dup_str);
 }
