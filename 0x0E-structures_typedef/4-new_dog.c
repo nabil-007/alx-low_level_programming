@@ -46,12 +46,12 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free (d);
 		return (NULL);
 	}
-	for (len = 0; *name != '\0'; len++)
+	for (len = 0; *name != '\0'; len++, name++)
 	{
 		d->name[len] = *name;
 	}
 	d->name[len] = '\0';
-	for (len = 0; *owner != '\0'; len++)
+	for (len = 0; *owner != '\0'; len++, owner++)
 	{
 		d->owner[len] = *owner;
 	}
