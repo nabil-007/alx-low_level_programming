@@ -2,11 +2,10 @@
 /**
  * main - function to printf the name of the file
  *
- * Return: 1as succes
+ * Return: 0 on succes
  */
 int main(void)
 {
-	printf(__FILE__);
-	printf("\n");
-	return (1);
+	printf("%s\n", __FILE__);
+	return (0);
 }
