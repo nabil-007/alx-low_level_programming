@@ -1,5 +1,17 @@
 #include<stdio.h>
 /**
- * print_name - function gthat print the name
- * @name: the name to print
- * @i
+ * array_iterator  - function gthat print the name
+ * @array: array of pointer
+ * @size: size of the array
+ * @action: pointer to the function
+ */
+void array_iterator(int *array, size_t size, void (*action)(int))
+{
+	int i;
+
+	if (array != NULL && action != NULL)
+		for (i = 0; i <= size; i++)
+		{
+			action(*(array + i));
+		}
+}
