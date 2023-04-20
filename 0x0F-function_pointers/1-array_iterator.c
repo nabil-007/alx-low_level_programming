@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stddef.h>
 /**
  * array_iterator  - function gthat print the name
  * @array: array of pointer
