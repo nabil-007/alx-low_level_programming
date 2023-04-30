@@ -2,7 +2,7 @@
 #include<stdlib.h>
 #include<string.h>
 /**
- * add_nodeint_end - function to add node aat the end 
+ * add_nodeint_end - function to add node aat the end
  * @head: pointer to a pointer
  * @n: the data to add
  *
