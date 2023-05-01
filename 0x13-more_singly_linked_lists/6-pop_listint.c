@@ -4,7 +4,7 @@
  * pop_listint - function to delete the head of a list
  * @head: pointer to a pointer
  *
- * Retunr: the head node data n
+ * Return: the head node data n
  */
 int pop_listint(listint_t **head)
 {
@@ -17,8 +17,8 @@ int pop_listint(listint_t **head)
 	}
 	ptr = *head;
 	data = ptr->n;
-	*head = ptr ->next;
-	free (ptr);
+	*head = ptr->next;
+	free(ptr);
 	return (data);
 }
 
