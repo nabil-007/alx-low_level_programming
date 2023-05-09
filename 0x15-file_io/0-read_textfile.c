@@ -18,18 +18,19 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	fd = open(filename, O_RDONLY);
 	if (fd == -1)
 		return (0);
-	baff = malloc(sizeof(char) * letters);
+	baff = malloc(sizeof(char) * (letters + 1));
 	if (baff == NULL)
 		return (0);
 	n_read = read(fd, baff, letters);
-	if (n_read == -1)
+	if (n_read == 0)
 	{
 		free(baff);
 		close(fd);
 		return (0);
 	}
+	baff[n_read] = '\0';
 	n_write = write(STDOUT_FILENO, baff, letters);
-	if (n_write == -1)
+	if (n_write == 0)
 	{
 		free(baff);
 		close(fd);
