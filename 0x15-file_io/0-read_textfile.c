@@ -22,14 +22,14 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (baff == NULL)
 		return (0);
 	n_read = read(fd, baff, letters);
-	if (n_read == 0)
+	if (n_read == -1)
 	{
 		free(baff);
 		close(fd);
 		return (0);
 	}
-	n_write = write(STDOUT_FILENO, baff, n_read);
-	if (n_write == 0)
+	n_write = write(STDOUT_FILENO, baff, letters);
+	if (n_write == -1)
 	{
 		free(baff);
 		close(fd);
